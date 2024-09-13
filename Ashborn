@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Elegan & Modern</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(7, 7, 7);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #555;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(20, 19, 19);
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #000000;
+        }
+
+        .hero {
+            background: url('https://images4.alphacoders.com/134/thumb-1920-1347180.png') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(8, 8, 8);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        .features, .gallery, .testimonials, .contact, .location {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .features h2, .gallery h2, .testimonials h2, .contact h2, .location h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .feature-items {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .feature-item {
+            width: 30%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .feature-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        .contact form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background-color: #555;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Animasi */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hero, .features, .gallery, .testimonials, .contact, .location {
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ファハドはかっこよくて素晴らしい</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="beranda">
+        <h1>ファハド</h1>
+        <p></p>
+        <a href="#fitur" class="btn">Jelajahi Sekarang</a>
+    </section>
+
+    <section class="features" id="fitur">
+        <h2>Beberapa Galeri Tentang Fahad</h2>
+        <div class="feature-items">
+            <div class="feature-item">
+                <img src="img/4.jpg" alt="Desain Responsif">
+                <h3></h3>
+                <p>Life is simple, but no easy...</p>
+            </div>
+            <div class="feature-item">
+                <img src="img/1.jpg" alt="Kecepatan Optimal">
+                <h3></h3>
+                <p>I like dreaming...</p>
+            </div>
+            <div class="feature-item">
+                <img src="img/6.jpg" alt="Keamanan Tinggi">
+                <h3></h3>
+                <p>Never waste an opportunity...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="galeri">
+        <h2>Galeri</h2>
+        <img src="img/7.jpg" alt="Galeri 1">
+        <img src="img/3.jpg" alt="Galeri 2">
+        <img src="img/2.jpg" alt="Galeri 3">
+    </section>
+
+    <section class="testimonials" id="testimoni">
+        <h2>List Lagu Fahad</h2>
+        <div class="testimonial">
+            <audio controls>
+                <source src="Ariana Grande ft. Future - Everyday (Official Video) ft. Future.mp3" type="audio/mpeg">
+            </audio>
+            <p>Everyday Ariana Grande</p>
+        </div>
+        <div class="testimonial">
+            <audio controls>
+                <source src="Avenged Sevenfold - A Little Piece Of Heaven [Official Music Video].mp3" type="audio/mpeg">
+            </audio>
+            <p>A Piece Of Heaven</p>
+        </div>
+    </section>
+
+    <section class="contact" id="kontak">
+        <h2>Hubungi Fahad Jika Ada Keperluan Penting Saja</h2>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <section class="location" id="lokasi">
+        <h2>Lokasi Kami</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354343848174!2d144.958551715616!3d-37.81720977975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad643d53a92f0af%3A0x5045675218ce7e33!2zU291dGliYW5rIEJvdWxldmFyZCwgTWVsYm91cm5lLCBBdXN0cmFsaWE!5e0!3m2!1sid!2sid!4v1510920321037"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; ありがとうございます、また会いましょう.</p>
+    </footer>
+
+</body>
+</html>
